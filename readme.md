@@ -1,10 +1,10 @@
 # A Boring pong
 
-you know, you playe it, you get bored.
+you know, you play it, you get bored.
 
 ## How to play it
 ### you know
-1. donwload haxe
+1. download haxe
 2. `haxelib install openfl`
 3. `haxelib run openfl setup`
 4. `openfl test neko`
