@@ -12,7 +12,6 @@ class AIPlatform extends Platform{
 
     public override function Update(father:Sprite){
         var centricYpos = this.y + (this.height/2);
-        trace(centricYpos);
         if(centricYpos - ball.y < 0){
             this.y = this.y + this.speed;
         }

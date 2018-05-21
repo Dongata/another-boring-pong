@@ -58,8 +58,7 @@ class Main extends Sprite {
 		addEventListener(Event.ADDED_TO_STAGE, added);
 	}
 
-	public static function main() 
-	{
+	public static function main() {
 		Lib.current.stage.align = openfl.display.StageAlign.TOP_LEFT;
 		Lib.current.stage.scaleMode = openfl.display.StageScaleMode.NO_SCALE;
 		Lib.current.addChild(new Main());
@@ -172,12 +171,12 @@ class Main extends Sprite {
 			player1.Update(this);
 			player2.Update(this);
 			var winner = ball.Update(this, player1, player2);
-			if(winner == "player1"){
+			if(winner == PlayersEnum.Player1){
 				player1Score ++;
 				updateScore();
 				resetBall();
 			}
-			if(winner == "player2"){
+			if(winner == PlayersEnum.Player2){
 				player2Score ++;
 				updateScore();
 				resetBall();

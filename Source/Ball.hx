@@ -13,7 +13,7 @@ class Ball extends Sprite{
         graphics.endFill();
     }
 
-    public function Update(father: Sprite, player1: Platform, player2: Platform): String{
+    public function Update(father: Sprite, player1: Platform, player2: Platform): PlayersEnum{
 		this.y = this.y - this.ySpeed;
 		this.x = this.x - this.xSpeed;
 
@@ -31,7 +31,7 @@ class Ball extends Sprite{
             if(player1.y < this.y && player1.height + player1.y > this.y){
                 this.xSpeed = -xSpeed;
             } else {
-                return "player2";
+                return PlayersEnum.Player2;
             }
         }
         
@@ -39,7 +39,7 @@ class Ball extends Sprite{
             if(player2.y < this.y && player2.height + player2.y > this.y){
                 this.xSpeed = -xSpeed;
             } else {
-                return "player1";
+                return PlayersEnum.Player1;
             }
         }
 
