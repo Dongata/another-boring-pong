@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Dongata/another-boring-pong.svg?branch=master)](https://travis-ci.org/Dongata/another-boring-pong)
+
 # A Boring pong
 
 you know, you play it, you get bored.
