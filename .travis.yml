@@ -4,5 +4,5 @@ before_install: sudo apt-get install haxe
 install :
   - echo | sudo haxelib setup
   - sudo haxelib install openfl
-  - sudo haxelib run openfl setup
+  - echo y | sudo haxelib run openfl setup
 script: sudo openfl build neko
