@@ -1,7 +1,7 @@
 os: linux
 before_install: sudo apt-get install haxe
 install :
-  - sudo haxelig install
+  - sudo haxelib install
   - sudo haxelib install openfl
   - sudo haxelib run openfl setup
 script: sudo openfl build neko
